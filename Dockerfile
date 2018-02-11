@@ -1,6 +1,10 @@
 FROM ubuntu:16.04
 
-MAINTAINER KickinEspresso <contact@kickinespreso.com>
+LABEL maintainer="KickinEspresso"
+LABEL email="contact@kickinespreso.com"
+LABEL website="kickinespresso.com"
+LABEL project_link="https://github.com/kickinespresso/espresso_wharf"
+LABEL version="0.1.0"
 
 ENV DEBIAN_FRONTEND noninteractive
 
