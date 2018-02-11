@@ -1,0 +1,15 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:9.6
+    ports:
+        - "5432:5432"
+  web:
+    build: .
+    command: mix phx.server 
+    volumes:
+      - .:/expresso_wharf_phoenix
+    ports:
+      - "4000:4000"
+    depends_on:
+      - postgres
